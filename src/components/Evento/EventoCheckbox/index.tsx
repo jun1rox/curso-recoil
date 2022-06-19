@@ -23,9 +23,11 @@ const EventoCheckbox: React.FC<{ evento: IEvento }> = ({ evento }) => {
     'far',
     'fa-2x',
     evento.completo ? 'fa-check-square' : 'fa-square'
-  ]
+  ];
 
-  return (<i className={estilos.join(' ')} onClick={alterarStatus}></i>)
+  return (
+    <i className={estilos.join(' ')} onClick={alterarStatus}></i>
+  );
 }
 
-export default EventoCheckbox
+export default EventoCheckbox;
